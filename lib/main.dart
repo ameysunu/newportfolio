@@ -58,9 +58,9 @@ class _HomePageState extends State<HomePage> {
                       ),
                       onTap: () async {
                         if (await canLaunch(
-                            "https://drive.google.com/file/d/1JHjAd1w-Dwno4V73G4lnZmLE8cfQpMzE/view?usp=sharing")) {
+                            "https://github.com/ameysunu/newportfolio/files/5112058/Amey.s.Resume.pdf")) {
                           await launch(
-                              "https://drive.google.com/file/d/1JHjAd1w-Dwno4V73G4lnZmLE8cfQpMzE/view?usp=sharing");
+                              "https://github.com/ameysunu/newportfolio/files/5112058/Amey.s.Resume.pdf");
                         }
                       },
                     ),
