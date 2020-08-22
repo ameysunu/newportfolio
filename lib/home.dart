@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:newweb/mobile.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:hexcolor/hexcolor.dart';
 
