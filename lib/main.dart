@@ -58,9 +58,10 @@ class _HomePageState extends State<HomePage> {
                       ),
                       onTap: () async {
                         if (await canLaunch(
-                            "https://github.com/ameysunu/newportfolio/files/5112058/Amey.s.Resume.pdf")) {
-                          await launch(
-                              "https://github.com/ameysunu/newportfolio/files/5112058/Amey.s.Resume.pdf");
+                            "https://amey.live/Amey'sResume.pdf")) {
+                          await launch("https://amey.live/Amey'sResume.pdf");
+                        } else {
+                          throw 'Could not catch the url';
                         }
                       },
                     ),
