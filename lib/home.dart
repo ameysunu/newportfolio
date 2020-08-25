@@ -322,62 +322,23 @@ class _HomeState extends State<Home> {
           ),
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Hexcolor('#FF813F'),
+        onPressed: () async {
+          const url = 'https://www.buymeacoffee.com/amey';
+          if (await canLaunch(url)) {
+            await launch(url);
+          } else {
+            throw 'Could not launch $url';
+          }
+        },
+        child: Tooltip(
+          message: 'Buy me a coffee!',
+          textStyle: TextStyle(
+              fontFamily: 'Cookie', color: Colors.white, fontSize: 20),
+          child: Image.asset('images/coffee.png'),
+        ),
+      ),
     );
   }
 }
-// Row(
-//   crossAxisAlignment: CrossAxisAlignment.start,
-//   children: <Widget>[
-//     Padding(
-//       padding: const EdgeInsets.fromLTRB(40, 0, 0, 0),
-//       child: Card(
-//         color: Colors.black,
-//         child: Column(
-//           crossAxisAlignment: CrossAxisAlignment.start,
-//           children: <Widget>[
-//             Text(
-//               "EDUCATION",
-//               style: TextStyle(
-//                   color: Hexcolor("#5B63B7"),
-//                   fontFamily: "Poppins",
-//                   fontSize: 40),
-//             ),
-//             Padding(
-//               padding:
-//                   const EdgeInsets.fromLTRB(0, 25, 0, 0),
-//               child: Text(
-//                 "I am a final year student, pursuing Bachelors in Technology\nfrom VIT University, Vellore in Computer Science.",
-//                 style: TextStyle(
-//                     color: Colors.white,
-//                     fontFamily: "Poppins",
-//                     fontSize: 20),
-//               ),
-//             ),
-//             Padding(
-//               padding:
-//                   const EdgeInsets.fromLTRB(0, 60, 0, 0),
-//               child: Text(
-//                 "CLUBS AND CHAPTERS",
-//                 style: TextStyle(
-//                     color: Hexcolor("#5B63B7"),
-//                     fontFamily: "Poppins",
-//                     fontSize: 40),
-//               ),
-//             ),
-//             Padding(
-//               padding:
-//                   const EdgeInsets.fromLTRB(0, 25, 0, 0),
-//               child: Text(
-//                 "Being in a part of active chapters and communities have\nhelped me improve my skills and also have helped me learn\na lot from fellow colleagues and developers, namely:\n\nInstrument Society of India-VIT Vellore\nFacebook Developers Circle: Kampala",
-//                 style: TextStyle(
-//                     color: Colors.white,
-//                     fontFamily: "Poppins",
-//                     fontSize: 20),
-//               ),
-//             ),
-//           ],
-//         ),
-//       ),
-//     ),
-//   ],
-// ),

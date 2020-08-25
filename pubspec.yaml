@@ -53,6 +53,7 @@ flutter:
     - images/facebook.png
     - images/email.png
     - images/bodyimg.png
+    - images/coffee.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -70,6 +71,10 @@ flutter:
     - family: Poppins
       fonts:
         - asset: fonts/Poppins-SemiBold.ttf
+
+    - family: Cookie
+      fonts:
+        - asset: fonts/Cookie-Regular.ttf
 
   #   - family: Trajan Pro
   #     fonts:
