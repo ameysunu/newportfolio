@@ -297,6 +297,21 @@ class _HomeState extends State<Home> {
                                             }
                                           },
                                         ),
+                                        InkWell(
+                                          child: Container(
+                                            height: 40,
+                                            width: 40,
+                                            child:
+                                                Image.asset("images/dev.png"),
+                                          ),
+                                          onTap: () async {
+                                            if (await canLaunch(
+                                                "https://dev.to/ameysunu")) {
+                                              await launch(
+                                                  "https://dev.to/ameysunu");
+                                            }
+                                          },
+                                        ),
                                       ],
                                     ),
                                   ),

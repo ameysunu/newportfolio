@@ -54,6 +54,7 @@ flutter:
     - images/email.png
     - images/bodyimg.png
     - images/coffee.png
+    - images/dev.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
