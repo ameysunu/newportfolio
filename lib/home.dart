@@ -42,19 +42,22 @@ class _HomeState extends State<Home> {
                             fontSize: 50),
                       ),
                     ),
-                    Text(
-                      "I am Amey Sunu",
-                      style: TextStyle(
-                          fontFamily: "Poppins",
-                          color: Hexcolor('#FFFFFF'),
-                          fontSize: 50),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(10, 10, 10, 10),
+                      child: Text(
+                        "I am Amey Sunu",
+                        style: TextStyle(
+                            fontFamily: "Poppins",
+                            color: Hexcolor('#FFFFFF'),
+                            fontSize: 47),
+                      ),
                     ),
                     Padding(
                       padding: const EdgeInsets.fromLTRB(0, 50, 0, 0),
                       child: Container(
-                        width: MediaQuery.of(context).size.width * 0.5,
+                        width: MediaQuery.of(context).size.width * 0.65,
                         child: Text(
-                          "An aspiring Computer Science Engineer from VIT University, Vellore and a Flutter Developer for web and mobile applications including Android and iOS.",
+                          "An aspiring, final year Computer Science Engineer undergraduate and a Flutter Developer for web and mobile applications including Android and iOS, as well as providing CI/CD for Flutter applications.",
                           style: TextStyle(
                               fontFamily: "Poppins",
                               color: Colors.white,
@@ -246,8 +249,8 @@ class _HomeState extends State<Home> {
                                   padding:
                                       const EdgeInsets.fromLTRB(40, 40, 40, 50),
                                   child: Container(
-                                    width:
-                                        MediaQuery.of(context).size.width * 0.5,
+                                    width: MediaQuery.of(context).size.width *
+                                        0.65,
                                     child: Row(
                                       mainAxisAlignment:
                                           MainAxisAlignment.spaceEvenly,
